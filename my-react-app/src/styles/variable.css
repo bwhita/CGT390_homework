@@ -13,7 +13,7 @@ body{
     --button-hover-text-color: #191a1a;
     --button-border-color: #ccc;
     --link-color: #ffffff;
-    --link-hover-color: var(--text-color);
+    --link-hover-color: var(--primary-background-color);
     /* font */
     --font-family: 'Roboto', sans-serif;
     /* break points */

@@ -15,7 +15,7 @@ const NewsPage = ({ onReceiveRecentArticle = () => {}, mode }) => {
         .join('')
     );
   };
-
+console.log(mode)
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -58,7 +58,7 @@ const NewsPage = ({ onReceiveRecentArticle = () => {}, mode }) => {
   if (error) return <p className={styles.error}>Error: {error}</p>;
 
   return (
-    <div className={`${styles.newsContainer} ${mode === 'dark' ? styles.dark : styles.light} `}>
+    <div className={`${styles.newsContainer} ${mode === "dark" ? styles['dark'] : styles.light} `}>
       <h1 className={styles.newsHeader}>News about Purdue University</h1>
       <ul className={styles.newsList}>
         {articles.map((article, index) => (
